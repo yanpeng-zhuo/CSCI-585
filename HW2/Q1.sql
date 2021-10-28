@@ -1,4 +1,4 @@
--- Database used: MySQL.
+-- Dtabase used: MySQL.
 
 CREATE TABLE EMPLOYEE(
    EMP_ID INT NOT NULL AUTO_INCREMENT,
