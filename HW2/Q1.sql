@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 -- Dtabase used: MySQL.
+=======
+-- Database used: MySQL.
+>>>>>>> 3db65f2de41ae77523d2d9f7a5b1fc08ea3a7c4c
 
 CREATE TABLE EMPLOYEE(
    EMP_ID INT NOT NULL AUTO_INCREMENT,
