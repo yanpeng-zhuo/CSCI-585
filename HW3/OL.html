@@ -1,0 +1,93 @@
+<!--
+ * @Author: Yanpeng Zhuo
+ * @Github: https://github.com/zhuoyanpeng
+ * @Date: 2021-10-29 14:33:35
+ * @LastEditors: Yanpeng Zhuo
+ * @Description: file content
+-->
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>OL</title>
+    <script src="https://openlayers.org/api/OpenLayers.js"></script>
+    <style>
+      #map {
+        width: 400px;
+        height: 400px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="map"></div>
+
+    <script>
+      // your JS code
+      console.log("Hola, all!");
+      alert("Hello JS World!");
+
+      // my data is a label/ID for what we store, which is the object stored in variable d,
+      // whose value is {"k1":[{"a":5, "b":-6}]}, which consists of a key called k1
+      // with an array as its value: [{"a":5, "b":-6}]
+
+      if (localStorage.getItem("myData") == null) {
+        console.log("no localStorage found")
+        var locations = {
+          "Home": [-118.2953408, 34.0187139],
+          "Smart N Final": [-118.291999393675, 34.0228453219296],
+          "SGM Building": [-118.289304119348, 34.0211329474753],
+          "Science Lib": [-118.289090925937, 34.0195887023899],
+          "Campus Center": [-118.286199075169, 34.0201650168846],
+          "Bookstore": [-118.286396898439, 34.0208780905549],
+          "USC Fountain": [-118.285176881949, 34.0204907899358],
+          "Memorial Lib": [-118.284445124507, 34.020497127602],
+          "Leavey Lib": [-118.283072970917, 34.0215983055848],
+          "Galen Center": [-118.280561829973, 34.0210280472801],
+          "Gateway APT": [-118.280108710861, 34.0222480707187],
+          "USC Village": [-118.284202507427, 34.0240176358734],
+          "Fitness": [-118.285326565289, 34.0252512868672],
+        };
+        localStorage.setItem("myData", JSON.stringify(locations));
+      }
+
+      // you'd need to modify the above, to store all your points
+
+      //next [presumably after closing the browser, and reloading our html]
+      // we can fetch the stored data, just by supplying its key:
+      var dataStored = JSON.parse(localStorage.getItem("myData"));
+      // verify that we fetched our data correctly
+      console.log(dataStored);
+
+      // here's how to plot points on a map, using OpenLayers:
+      // [this is code I mildly modified, from an existing source]
+      function initMap() {
+        map = new OpenLayers.Map("map");
+        basemap = new OpenLayers.Layer.OSM("Simple OSM Map");
+        map.addLayer(basemap);
+        markers = new OpenLayers.Layer.Markers("Markers");
+        map.addLayer(markers);
+      } // initMap()
+
+      function addMarker(latitude, longitude) {
+        var lonLat = new OpenLayers.LonLat(longitude, latitude).transform(
+          new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
+          map.getProjectionObject() // to Spherical Mercator Projection
+        );
+        var point = new OpenLayers.Marker(lonLat);
+        markers.addMarker(point);
+        map.setCenter(lonLat, 14); // second arg is zoom level
+        //console.log(latitude + ", " + longitude);
+      } // addMarker()
+
+      // load and setup map layers
+      initMap();
+
+      // here's how to plot just ONE [lat,long] on the map!
+      for (var key in dataStored) {
+        // indx is 0,1,2...
+        addMarker(dataStored[key][1], dataStored[key][0]); // somewhere in SoCal...
+      }
+    </script>
+  </body>
+</html>
