@@ -10,43 +10,43 @@
     </LineStyle>
 </Style>
 <Placemark><name>Home</name>
-<styleUrl>#z1</styleUrl><Point><coordinates>-118.295340800000, 34.0187139000000</coordinates></Point>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.295340800000,34.0187139000000</coordinates></Point>
 </Placemark>
 <Placemark><name>Smart N Final</name>
-<styleUrl>#z1</styleUrl><Point><coordinates>-118.291999393675, 34.0228453219296</coordinates></Point>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.291999393675,34.0228453219296</coordinates></Point>
 </Placemark>
 <Placemark><name>SGM Building</name>
-<styleUrl>#z1</styleUrl><Point><coordinates>-118.289304119348, 34.0211329474753</coordinates></Point>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.289304119348,34.0211329474753</coordinates></Point>
 </Placemark>
 <Placemark><name>Science Lib</name>
-<styleUrl>#z1</styleUrl><Point><coordinates>-118.289090925937, 34.0195887023899</coordinates></Point>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.289090925937,34.0195887023899</coordinates></Point>
 </Placemark>
 <Placemark><name>Campus Center</name>
-<styleUrl>#z1</styleUrl><Point><coordinates>-118.286199075169, 34.0201650168846</coordinates></Point>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.286199075169,34.0201650168846</coordinates></Point>
 </Placemark>
 <Placemark><name>Bookstore</name>
-<styleUrl>#z1</styleUrl><Point><coordinates>-118.286396898439, 34.0208780905549</coordinates></Point>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.286396898439,34.0208780905549</coordinates></Point>
 </Placemark>
 <Placemark><name>USC Fountain</name>
-<styleUrl>#z1</styleUrl><Point><coordinates>-118.285176881949, 34.0204907899358</coordinates></Point>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.285176881949,34.0204907899358</coordinates></Point>
 </Placemark>
 <Placemark><name>Memorial Lib</name>
-<styleUrl>#z1</styleUrl><Point><coordinates>-118.284445124507, 34.0204971276020</coordinates></Point>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.284445124507,34.0204971276020</coordinates></Point>
 </Placemark>
 <Placemark><name>Leavey Lib</name>
-<styleUrl>#z1</styleUrl><Point><coordinates>-118.283072970917, 34.0215983055848</coordinates></Point>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.283072970917,34.0215983055848</coordinates></Point>
 </Placemark>
 <Placemark><name>Galen Center</name>
-<styleUrl>#z1</styleUrl><Point><coordinates>-118.280561829973, 34.0210280472801</coordinates></Point>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.280561829973,34.0210280472801</coordinates></Point>
 </Placemark>
 <Placemark><name>Gateway APT</name>
-<styleUrl>#z1</styleUrl><Point><coordinates>-118.280108710861, 34.0222480707187</coordinates></Point>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.280108710861,34.0222480707187</coordinates></Point>
 </Placemark>
 <Placemark><name>USC Village</name>
-<styleUrl>#z1</styleUrl><Point><coordinates>-118.284202507427, 34.0240176358734</coordinates></Point>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.284202507427,34.0240176358734</coordinates></Point>
 </Placemark>
 <Placemark><name>Fitness</name>
-<styleUrl>#z1</styleUrl><Point><coordinates>-118.285326565289, 34.0252512868672</coordinates></Point>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.285326565289,34.0252512868672</coordinates></Point>
 </Placemark>
 <Placemark> 
     <name>myPolygon</name> 
@@ -55,13 +55,13 @@
         <outerBoundaryIs> 
             <LinearRing>
                 <coordinates>
-                    -118.2953408,34.0187139,0
-                    -118.291999393675,34.0228453219296,0
-                    -118.285326565289,34.0252512868672,0
-                    -118.280108710861,34.0222480707187,0
-                    -118.280561829973,34.0210280472801,0
-                    -118.289090925937,34.0195887023899,0
-                    -118.2953408,34.0187139,0
+                    -118.2953408,34.0187139,10
+                    -118.291999393675,34.0228453219296,10
+                    -118.285326565289,34.0252512868672,10
+                    -118.280108710861,34.0222480707187,10
+                    -118.280561829973,34.0210280472801,10
+                    -118.289090925937,34.0195887023899,10
+                    -118.2953408,34.0187139,10
                 </coordinates> 
             </LinearRing> 
         </outerBoundaryIs> 
@@ -80,7 +80,7 @@
     </LineString>
 </Placemark>
 <Placemark>
-    <name>nearest 1</name>
+    <name>nearest 2</name>
     <styleUrl>#styleSheet</styleUrl>
     <LineString>
       <extrude>1</extrude>
@@ -92,7 +92,7 @@
     </LineString>
 </Placemark>
 <Placemark>
-    <name>nearest 1</name>
+    <name>nearest 3</name>
     <styleUrl>#styleSheet</styleUrl>
     <LineString>
       <extrude>1</extrude>
@@ -104,7 +104,7 @@
     </LineString>
 </Placemark>
 <Placemark>
-    <name>nearest 1</name>
+    <name>nearest 4</name>
     <styleUrl>#styleSheet</styleUrl>
     <LineString>
       <extrude>1</extrude>
