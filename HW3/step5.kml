@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.0">
 <Document>
-<Style id="styleSheet">
+<Style id="z1">
     <IconStyle><Icon><href>http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png</href></Icon></IconStyle>
     <LineStyle>
       <color>7f0000ff</color>
@@ -55,13 +55,13 @@
         <outerBoundaryIs> 
             <LinearRing>
                 <coordinates>
-                    -118.2953408,34.0187139,10
-                    -118.291999393675,34.0228453219296,10
-                    -118.285326565289,34.0252512868672,10
-                    -118.280108710861,34.0222480707187,10
-                    -118.280561829973,34.0210280472801,10
-                    -118.289090925937,34.0195887023899,10
-                    -118.2953408,34.0187139,10
+                    -118.2953408,34.0187139
+                    -118.291999393675,34.0228453219296
+                    -118.285326565289,34.0252512868672
+                    -118.280108710861,34.0222480707187
+                    -118.280561829973,34.0210280472801
+                    -118.289090925937,34.0195887023899
+                    -118.2953408,34.0187139
                 </coordinates> 
             </LinearRing> 
         </outerBoundaryIs> 
@@ -69,7 +69,7 @@
 </Placemark>
 <Placemark>
     <name>nearest 1</name>
-    <styleUrl>#styleSheet</styleUrl>
+    <styleUrl>#z1</styleUrl>
     <LineString>
       <extrude>1</extrude>
       <tessellate>1</tessellate>
@@ -81,7 +81,7 @@
 </Placemark>
 <Placemark>
     <name>nearest 2</name>
-    <styleUrl>#styleSheet</styleUrl>
+    <styleUrl>#z1</styleUrl>
     <LineString>
       <extrude>1</extrude>
       <tessellate>1</tessellate>
@@ -93,7 +93,7 @@
 </Placemark>
 <Placemark>
     <name>nearest 3</name>
-    <styleUrl>#styleSheet</styleUrl>
+    <styleUrl>#z1</styleUrl>
     <LineString>
       <extrude>1</extrude>
       <tessellate>1</tessellate>
@@ -105,7 +105,7 @@
 </Placemark>
 <Placemark>
     <name>nearest 4</name>
-    <styleUrl>#styleSheet</styleUrl>
+    <styleUrl>#z1</styleUrl>
     <LineString>
       <extrude>1</extrude>
       <tessellate>1</tessellate>

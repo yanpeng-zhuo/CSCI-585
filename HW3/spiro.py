@@ -10,7 +10,9 @@ import math
 f = open("spiro.kml", "w")
 f.write("<kml xmlns='http://earth.google.com/kml/2.0'>\n")
 f.write("<Document>\n")
-
+f.write("<Placemark>")
+f.write("<LinearRing>")
+f.write("<coordinates>")
 R = 0.0008
 r = 0.0001
 a = 0.0004
@@ -27,12 +29,10 @@ while(t<math.pi*nRev):
     y = (R+r)*math.sin((r/R)*t) - a*math.sin((1+r/R)*t)
     t+=0.1
 
-    f.write("<Placemark>")
-    f.write("<Point>")
-    f.write("<coordinates>" + str(centerX+x) + "," + str(centerY+y) + "</coordinates>")
-    f.write("</Point>")
-    f.write("</Placemark>\n")
-
+    f.write(str(centerX+x) + "," + str(centerY+y)+ "\n")
+f.write("</coordinates>")
+f.write("</LinearRing>")
+f.write("</Placemark>\n")
 f.write("</Document>\n")
 f.write("</kml>\n")
 f.close()

@@ -1,9 +1,3 @@
-<<<<<<< HEAD
--- Dtabase used: MySQL.
-=======
--- Database used: MySQL.
->>>>>>> 3db65f2de41ae77523d2d9f7a5b1fc08ea3a7c4c
-
 CREATE TABLE EMPLOYEE(
    EMP_ID INT NOT NULL AUTO_INCREMENT,
    EMP_NAME VARCHAR(100) NOT NULL,
@@ -119,7 +113,7 @@ values
 (DEFAULT, 1, "2021-10-01", 2),
 (DEFAULT, 1, "2021-10-01", 3),
 (DEFAULT, 1, "2021-10-01", 4),
-(DEFAULT, 1, "2021-10-01", 5),
+(DEFAULT, 1, "2021-10-01", 1),
 (DEFAULT, 2, "2021-10-01", 1),
 (DEFAULT, 3, "2021-10-01", 1),
 (DEFAULT, 4, "2021-10-01", 4),
